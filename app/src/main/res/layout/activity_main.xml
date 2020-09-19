@@ -1,22 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/marciano"
+tools:context=".MainActivity">
+
+<TextView
+    android:id="@+id/textView"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/pAndi"
-    tools:context=".MainActivity">
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:paddingTop="60dp"
+    android:text="@string/titulo_app"
+    android:textAlignment="center"
+    android:textColor="#FBFAFA"
+    android:textSize="30sp"
+    android:textStyle="bold" />
 
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:paddingTop="60dp"
-        android:text="@string/titulo_app"
-        android:textAlignment="center"
-        android:textColor="#FBFAFA"
-        android:textSize="30sp"
-        android:textStyle="bold" />
-</LinearLayout>
+<Button
+    android:id="@+id/btnEnviar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:textColor="#FFFFFF"
+    android:background="@drawable/custombutton"
+    android:text="ENVIAR" />
+</RelativeLayout>
